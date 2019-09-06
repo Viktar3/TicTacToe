@@ -91,6 +91,10 @@ class TicTacToe:
             if y == '3':
                 y = 2
 
+            if self._board[x][y] != "-":
+                print("Pick an empty location!\n")
+                continue
+
             return x,y
 
         # Should not get to this point
